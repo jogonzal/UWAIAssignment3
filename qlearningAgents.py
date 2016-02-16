@@ -42,7 +42,20 @@ class QLearningAgent(ReinforcementAgent):
         "You can initialize Q-values here..."
         ReinforcementAgent.__init__(self, **args)
 
-        "*** YOUR CODE HERE ***"
+        self.qValueExtimates = {};
+
+    def getMaxQValueActionTuple(self, state):
+
+        maxQValue = 0;
+        maxAction = None;
+        actions = self.getLegalActions(state);
+        for action in actions:
+            qValue = self.getQValue(state, action);
+            if (maxAction == None or qValue > maxQValue):
+                maxQValue = qValue;
+                maxAction = action;
+        return (maxQValue, maxAction);
+
 
     def getQValue(self, state, action):
         """
@@ -50,9 +63,10 @@ class QLearningAgent(ReinforcementAgent):
           Should return 0.0 if we have never seen a state
           or the Q node value otherwise
         """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
-
+        tuple = (state, action);
+        if (tuple in self.qValueExtimates):
+            return self.qValueExtimates[tuple];
+        return 0;
 
     def computeValueFromQValues(self, state):
         """
@@ -61,8 +75,8 @@ class QLearningAgent(ReinforcementAgent):
           there are no legal actions, which is the case at the
           terminal state, you should return a value of 0.0.
         """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        qValue, action = self.getMaxQValueActionTuple(state);
+        return qValue;
 
     def computeActionFromQValues(self, state):
         """
@@ -70,8 +84,8 @@ class QLearningAgent(ReinforcementAgent):
           are no legal actions, which is the case at the terminal state,
           you should return None.
         """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        qValue, action = self.getMaxQValueActionTuple(state);
+        return action;
 
     def getAction(self, state):
         """
@@ -101,8 +115,13 @@ class QLearningAgent(ReinforcementAgent):
           NOTE: You should never call this function,
           it will be called on your behalf
         """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        maxQValue, maxAction = self.getMaxQValueActionTuple(nextState);
+        newEstimate = reward + self.discount * maxQValue;
+        oldEstimate = self.getQValue(state, action);
+        incorporatedEstimate = (1 - self.alpha) * oldEstimate + self.alpha * newEstimate;
+        self.qValueExtimates[(state, action)] = incorporatedEstimate;
+
+        return;
 
     def getPolicy(self, state):
         return self.computeActionFromQValues(state)

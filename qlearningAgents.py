@@ -42,7 +42,7 @@ class QLearningAgent(ReinforcementAgent):
         "You can initialize Q-values here..."
         ReinforcementAgent.__init__(self, **args)
 
-        self.qValueExtimates = {};
+        self.qValueExtimates = util.Counter();
 
     def getMaxQValueActionTuple(self, state):
 
@@ -186,20 +186,45 @@ class ApproximateQAgent(PacmanQAgent):
     def getWeights(self):
         return self.weights
 
+    def getMaxQValueActionTuple2(self, state):
+        maxQValue = 0;
+        maxAction = None;
+        actions = self.getLegalActions(state);
+        for action in actions:
+            qValue = self.getQValue(state, action);
+            if (maxAction == None or qValue >= maxQValue):
+                maxQValue = qValue;
+                maxAction = action;
+            elif (maxQValue == qValue and util.flipCoin(0.5)):
+                maxQValue = qValue;
+                maxAction = action;
+        return (maxQValue, maxAction);
+
     def getQValue(self, state, action):
         """
           Should return Q(state,action) = w * featureVector
           where * is the dotProduct operator
         """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        features = self.featExtractor.getFeatures(state, action);
+        multiply = self.weights * features;
+        return multiply;
 
     def update(self, state, action, nextState, reward):
         """
            Should update your weights based on transition
         """
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        maxQValue = self.getMaxQValueActionTuple2(nextState)[0];
+        newEstimate = reward + self.discount * maxQValue;
+        oldEstimate = self.getQValue(state, action);
+        difference = newEstimate - oldEstimate;
+        self.qValueExtimates[(state, action)] = oldEstimate + self.alpha * difference;
+        # Update all features
+        features = self.featExtractor.getFeatures(state, action);
+        sortedKeys = features.keys();
+        for key in sortedKeys:
+            self.weights[key] += self.alpha * difference * features[key];
+
+        return;
 
     def final(self, state):
         "Called at the end of each game."

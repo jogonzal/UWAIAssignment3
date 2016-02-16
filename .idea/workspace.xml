@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aefee27-f2e9-4d8c-9a21-a8daf3e51c35" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/analysis.py" afterPath="$PROJECT_DIR$/analysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qlearningAgents.py" afterPath="$PROJECT_DIR$/qlearningAgents.py" />
     </list>
     <ignored path="UWAIAssignment3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,9 +23,11 @@
     <SUITE FILE_PATH="coverage/UWAIAssignment3$BRidge_crossing_revisited.coverage" NAME="BRidge crossing revisited Coverage Results" MODIFIED="1455588193687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UWAIAssignment3$Autograder_q2.coverage" NAME="Autograder q2 Coverage Results" MODIFIED="1455582608910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UWAIAssignment3$Autograder_q5.coverage" NAME="Autograder q5 Coverage Results" MODIFIED="1455587345404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UWAIAssignment3$Autograder_q7.coverage" NAME="Autograder q7 Coverage Results" MODIFIED="1455588578377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UWAIAssignment3$Autograder_q8.coverage" NAME="Autograder q8 Coverage Results" MODIFIED="1455592807140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/UWAIAssignment3$Autograder_q1.coverage" NAME="Autograder q1 Coverage Results" MODIFIED="1455582406321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/UWAIAssignment3$autograder.coverage" NAME="Autograder complete Coverage Results" MODIFIED="1455582481726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/UWAIAssignment3$pacman.coverage" NAME="pacman Coverage Results" MODIFIED="1455576630797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UWAIAssignment3$autograder.coverage" NAME="Autograder complete Coverage Results" MODIFIED="1455592820373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/UWAIAssignment3$pacman.coverage" NAME="pacman training Coverage Results" MODIFIED="1455588649947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -40,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/valueIterationAgents.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -56,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analysis.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="analysis.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6040757">
-              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -86,21 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qlearningAgents.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qlearningAgents.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autograder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autograder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="294" column="0" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.63829786">
+              <caret line="221" column="50" selection-start-line="221" selection-start-column="50" selection-end-line="221" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -110,17 +102,27 @@
         <entry file="file://$PROJECT_DIR$/util.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="499" column="4" selection-start-line="499" selection-start-column="4" selection-end-line="499" selection-end-column="4" />
+              <caret line="282" column="8" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grading.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grading.py">
+      <file leaf-file-name="featureExtractors.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/featureExtractors.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reinforcementTestClasses.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reinforcementTestClasses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,8 +137,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/valueIterationAgents.py" />
-        <option value="$PROJECT_DIR$/qlearningAgents.py" />
         <option value="$PROJECT_DIR$/analysis.py" />
+        <option value="$PROJECT_DIR$/qlearningAgents.py" />
       </list>
     </option>
   </component>
@@ -209,24 +211,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UWAIAssignment3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UWAIAssignment3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_cases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="q6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -241,8 +225,8 @@
       <recent name="C:\Users\jogonzal\Documents\GitHub\UWAIAssignment3" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Autograder q6">
-    <configuration default="false" name="pacman" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Autograder complete">
+    <configuration default="false" name="pacman training" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -256,7 +240,7 @@
       <module name="UWAIAssignment3" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pacman.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="-p PacmanQAgent -n 10 -l smallGrid -a numTraining=10" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -592,6 +576,42 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="Autograder q7" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UWAIAssignment3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autograder.py" />
+      <option name="PARAMETERS" value="-q q7" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Autograder q8" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="UWAIAssignment3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autograder.py" />
+      <option name="PARAMETERS" value="-q q8" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="BRidge crossing revisited" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -610,23 +630,25 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="10">
+    <list size="12">
       <item index="0" class="java.lang.String" itemvalue="Python.Autograder q1" />
       <item index="1" class="java.lang.String" itemvalue="Python.Autograder q2" />
       <item index="2" class="java.lang.String" itemvalue="Python.Autograder q3" />
       <item index="3" class="java.lang.String" itemvalue="Python.Autograder q4" />
       <item index="4" class="java.lang.String" itemvalue="Python.Autograder q5" />
       <item index="5" class="java.lang.String" itemvalue="Python.Autograder q6" />
-      <item index="6" class="java.lang.String" itemvalue="Python.BRidge crossing revisited" />
-      <item index="7" class="java.lang.String" itemvalue="Python.pacman" />
-      <item index="8" class="java.lang.String" itemvalue="Python.Autograder complete" />
-      <item index="9" class="java.lang.String" itemvalue="Python.Gridworld manual" />
+      <item index="6" class="java.lang.String" itemvalue="Python.Autograder q7" />
+      <item index="7" class="java.lang.String" itemvalue="Python.Autograder q8" />
+      <item index="8" class="java.lang.String" itemvalue="Python.BRidge crossing revisited" />
+      <item index="9" class="java.lang.String" itemvalue="Python.pacman training" />
+      <item index="10" class="java.lang.String" itemvalue="Python.Autograder complete" />
+      <item index="11" class="java.lang.String" itemvalue="Python.Gridworld manual" />
     </list>
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.Autograder complete" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Gridworld manual" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pacman" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pacman training" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Gridworld manual" />
       </list>
     </recent_temporary>
   </component>
@@ -669,9 +691,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="45" />
+      <option name="time" value="62" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self.weights" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/layouts/smallGrid.lay">
@@ -778,34 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="40" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gridworld.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="396" column="14" selection-start-line="396" selection-start-column="14" selection-end-line="396" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/valueIterationAgents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="499" column="4" selection-start-line="499" selection-start-column="4" selection-end-line="499" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -818,6 +820,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/valueIterationAgents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featureExtractors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5555556">
+          <caret line="272" column="28" selection-start-line="272" selection-start-column="28" selection-end-line="272" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="282" column="8" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reinforcementTestClasses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="301" column="0" selection-start-line="301" selection-start-column="0" selection-end-line="301" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_cases/q6/grade-agent.test">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -826,26 +876,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reinforcementTestClasses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55604076">
-          <caret line="618" column="70" selection-start-line="618" selection-start-column="30" selection-end-line="618" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qlearningAgents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6040757">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.63829786">
+          <caret line="221" column="50" selection-start-line="221" selection-start-column="50" selection-end-line="221" selection-end-column="50" />
           <folding />
         </state>
       </provider>

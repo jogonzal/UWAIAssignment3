@@ -54,6 +54,9 @@ class QLearningAgent(ReinforcementAgent):
             if (maxAction == None or qValue > maxQValue):
                 maxQValue = qValue;
                 maxAction = action;
+            elif (maxQValue == qValue and util.flipCoin(0.5)):
+                maxQValue = qValue;
+                maxAction = action;
         return (maxQValue, maxAction);
 
 

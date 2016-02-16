@@ -222,7 +222,8 @@ class ApproximateQAgent(PacmanQAgent):
         features = self.featExtractor.getFeatures(state, action);
         sortedKeys = features.keys();
         for key in sortedKeys:
-            self.weights[key] += self.alpha * difference * features[key];
+            previousWeight = self.weights[key];
+            self.weights[key] = previousWeight + self.alpha * difference * features[key];
 
         return;
 
